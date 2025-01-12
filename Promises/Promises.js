@@ -68,6 +68,15 @@ fetchuserData(123).then((user) => {
 })).catch((error) => {console.log(error)});
 
 
+
+//Make API Call with the Fetch Method
+
+function makeAPI() {
+    const url = 'https://dummyjson.com/users';
+    fetch(url).then((res) => res.json()).then((resp) => console.log(resp.users)).catch((error) => console.log(error));
+}
+makeAPI();
+
 // fetchuserData(123).then((user) => {console.log(user)}).catch((error) => console.error(error));
 // fetchuserData(null).then((user) => {console.log(user)}).catch((error) => console.error(error));
 
